@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tambah Mahasiswa</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2>Form Tambah Mahasiswa</h2>
+        <form action="index.php" method="POST">
+            <div class="form-group">
+                <label for="nim">NIM:</label>
+                <input type="text" class="form-control" id="nim" name="nim" required>
+            </div>
+            <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" class="form-control" id="nama" name="nama" required>
+            </div>
+            <div class="form-group">
+                <label for="tempat">Tempat:</label>
+                <input type="text" class="form-control" id="tempat" name="tempat" required>
+            </div>
+            <div class="form-group">
+                <label for="tl">Tanggal Lahir:</label>
+                <input type="date" class="form-control" id="tl" name="tl" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select class="form-control" id="gender" name="gender" required>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telp">Telepon:</label>
+                <input type="text" class="form-control" id="telp" name="telp" required>
+            </div>
+            <button type="submit" name="add_submit" class="btn btn-success">Simpan</button>
+            <a href="index.php" class="btn btn-secondary">Kembali</a>
+        </form>
+    </div>
+</body>
+
+</html>
